@@ -10,12 +10,6 @@ EPI Judge is meant to serve as a companion to our book Elements of Programming I
 - **Test-cases** that cover common corner-case and performance bugs
 - A **framework** for running these tests on your implementation on your machine
 
-## Installation
-
-Here's how to download the judge:
-
-    $ git clone https://github.com/adnanaziz/EPIJudge.git
-If you do not have `git`, here's a good [tutorial](https://www.atlassian.com/git/tutorials/install-git) on installing git itself.
 
 ## Running the judge using IDEs
 
@@ -23,15 +17,7 @@ Check out these one minute videos to see how easy it is to get started with the 
 
 ### Python
 
-[PyCharm](https://youtu.be/ImD_iI-uGYo), [Eclipse](https://youtu.be/rZ1qqwEXwQY), [NetBeans](https://youtu.be/Z41jW1TyZwY)
-
-### Java
-
-[IntelliJ IDEA](https://youtu.be/1BzHUpluQHM), [Eclipse](https://youtu.be/i9uz9Zazo0A)
-
-### C++
-
-[CLion](https://youtu.be/aHPDApyyYEg), [Visual Studio 2017](https://youtu.be/hgd8IIQpBEE)
+[PyCharm](https://youtu.be/ImD_iI-uGYo),
 
 
 ## Running the judge from the command line
@@ -40,29 +26,7 @@ Check out these one minute videos to see how easy it is to get started with the 
 
     $ python3 <program_name>.py
 
-#### Java
-
-Use the [`Makefile`](https://github.com/adnanaziz/EPIJudge/blob/master/epi_judge_java/Makefile). 
-
-Compile and run a specific program:
-
-    $ make <program_name> 
-Example:
-
-    $ make Anagrams
-Compile and run the last program that you edited:
-
-	$ make
-
-### C++
-
-You can manually compile and run all programs by directly invoking GCC and Clang. 
-
-    $ g++ -pthread -std=c++14 -O3 -o anagrams anagrams.cc
-You can also use the provided Makefile: `make <program_name>`. You can also use CMake with the provided CMakeLists.txt file. 
-
-	$ make 
-The default Makefile target is the last edited file.
+IDK if the "make" command works here, but just incase:
 
     $ make anagrams
 
